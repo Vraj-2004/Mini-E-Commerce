@@ -1,6 +1,39 @@
-# Welcome to your Expo app 👋
+# 📱 React Native E-Commerce App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A complete mini e-commerce mobile application built using **Expo**, **React Native**, **Expo Router**, **TypeScript**, **Context API**, and **AsyncStorage**.  
+This app includes: **Product List → Details → Cart → Order History → Auth Modal**.
+
+---
+
+## 🚀 Features
+
+### 🔐 Authentication
+- Login handled through a **global modal** (no separate screen).
+- Modal appears only when accessing protected screens.
+- After login, back navigation **never shows login modal again**.
+- Authentication state is stored using AsyncStorage.
+
+### 🛒 Shopping Cart
+- Add/remove items
+- Prevent duplicate items
+- Cart persists across app restarts
+- Navigate automatically to cart after adding
+
+### 📦 Orders & History
+- Place order → moves items to order history
+- Each order gets numbered: `Order #1`, `Order #2`, …
+- Clicking an order shows detailed list: image, title, price
+- Total cost displayed
+- Order history stored in AsyncStorage
+
+### 🧭 Navigation
+Using **expo-router** with a Drawer:
+- Product List  
+- Cart  
+- Order History  
+- Profile  
+
+---
 
 ## Get started
 
